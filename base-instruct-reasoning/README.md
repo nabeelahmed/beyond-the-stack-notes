@@ -13,8 +13,8 @@ The notebook loads one checkpoint at a time. Both model downloads together requi
 Saved results document Python 3.9.6 and the package baseline in `requirements.txt`. This is an observed direct-dependency baseline, not a full dependency lock or a tested fresh installation on every platform.
 
 ```bash
-git clone https://github.com/nabeelahmed/beyond-the-stack-labs.git
-cd beyond-the-stack-labs/bts_blog/base-instruct-reasoning
+git clone https://github.com/nabeelahmed/beyond-the-stack-notes.git
+cd beyond-the-stack-notes/base-instruct-reasoning
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -22,7 +22,7 @@ python -m ipykernel install --user --name bts-model-labels --display-name "Pytho
 python -m jupyterlab base_instruct_reasoning.ipynb
 ```
 
-On Windows, activate with `.venv\Scripts\activate`. If using the standalone deliverable, navigate to its extracted directory instead of cloning. Select the newly created kernel, restart it, and run all cells in order. The first run downloads the pinned checkpoints and tokenizers into the Hugging Face cache. Set `HF_HUB_CACHE` before starting Jupyter if you need a different location. Keep weights outside the repository.
+On Windows, activate with `.venv\Scripts\activate`. Select the newly created kernel, restart it, and run all cells in order. The first run downloads the pinned checkpoints and tokenizers into the Hugging Face cache. Set `HF_HUB_CACHE` before starting Jupyter if you need a different location. Keep weights outside the repository.
 
 For a headless run from this directory:
 

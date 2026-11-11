@@ -32,8 +32,8 @@ plus eight manually inspected generation steps and an additional representation-
 For a fresh setup:
 
 ```bash
-git clone https://github.com/nabeelahmed/beyond-the-stack-labs.git
-cd beyond-the-stack-labs/bts_blog/what-is-an-llm
+git clone https://github.com/nabeelahmed/beyond-the-stack-notes.git
+cd beyond-the-stack-notes/what-is-an-llm
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
