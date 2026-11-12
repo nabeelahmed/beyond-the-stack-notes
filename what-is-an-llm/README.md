@@ -2,6 +2,8 @@
 
 An original notebook following one synthetic delivery update through a text-generating model.
 
+Read the accompanying article: [What Is an LLM? A Mental Model for Software Engineers](https://blog.beyondthestack.dev/what-is-an-llm/).
+
 Open [what_is_an_llm.ipynb](what_is_an_llm.ipynb). Sections 1–7 form a complete walkthrough:
 
 | Section | Demonstration |
