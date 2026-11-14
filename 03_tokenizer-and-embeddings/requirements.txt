@@ -1,0 +1,7 @@
+# Compatibility ranges for a fresh reader environment; not an executed lockfile.
+# Record actual installed versions using the notebook before publication.
+torch>=2.3,<3
+transformers>=4.45,<5
+safetensors>=0.4,<1
+jupyterlab>=4,<5
+ipykernel>=6,<8

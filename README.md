@@ -8,6 +8,7 @@ Runnable notebooks and small experiments accompanying Beyond the Stack's writing
 | --- | --- |
 | [What Is an LLM? A Mental Model for Software Engineers](what-is-an-llm/README.md) | A guided walkthrough of tokenisation, transformers, and text generation using a small local model. |
 | [Base, Instruct, and Reasoning Models](base-instruct-reasoning/README.md) | A reproducible comparison of a base checkpoint and related post-trained model with thinking disabled and enabled. |
+| [From Text to Numbers](03_tokenizer-and-embeddings/README.md) | Tokenization, byte-level BPE intuition, and initial embedding lookups with SmolLM2-135M. |
 
 ## Local setup
 
@@ -29,6 +30,6 @@ Start JupyterLab from the repository root:
 python -m jupyter lab
 ```
 
-Then open either notebook listed above. The notebooks use pinned direct dependencies but are not complete lockfiles. Saved outputs document historical runs; package versions, platform, model outputs, and timings can differ on a fresh run.
+Then open a notebook listed above. For From Text to Numbers, also install its companion requirements as described in its README. Dependencies are documented per companion and are not complete lockfiles. Saved outputs document historical runs; package versions, platform, model outputs, and timings can differ on a fresh run.
 
 Model weights, caches, virtual environments, local experiment records, and private inputs belong outside Git. The included examples use synthetic data.
