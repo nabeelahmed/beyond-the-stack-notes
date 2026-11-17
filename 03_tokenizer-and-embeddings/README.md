@@ -2,6 +2,8 @@
 
 Open [the notebook](article_03_text_to_numbers_smolLM2.ipynb) to explore tokenization, token IDs, and initial embeddings using the base [SmolLM2-135M checkpoint](https://huggingface.co/HuggingFaceTB/SmolLM2-135M).
 
+Continue with [How Attention Uses Context](../04_attention/README.md) to follow single-head and multi-head attention calculations and inspect how the same checkpoint combines information across token positions.
+
 ## What you will learn
 
 Two synthetic work requests are followed through the tokenizer and embedding lookup. Examples cover character-level BPE, case and whitespace, a rectangular `6 × 4` toy embedding table, five real embedding lookups, an artificial training update, and identical initial vectors for a shared token ID.
@@ -30,8 +32,6 @@ The recorded run used Python 3.9.6, Torch 2.8.0, Transformers 4.57.6, Tokenizers
 Tokenizer, configuration, and weights use revision `93efa2f097d58c2a74874c7e644dbc9b0cee75a2`. The saved run measured an embedding table of shape `(49152, 576)` and five retrieved vectors of shape `(5, 576)`; all assertions passed.
 
 The BPE toy starts with visible characters; the real tokenizer uses byte-level BPE. The training example moves one artificial row toward an invented target and is not language-model pretraining. Displayed real vectors show only four rounded coordinates per token. Equal initial embeddings establish a lookup property rather than contextual understanding. Saved outputs describe one run; rerun to verify them in another environment.
-
-Two environment warnings about LibreSSL and optional notebook progress widgets were omitted from saved outputs. Other diagnostics are retained. Rerunning may display those warnings depending on the environment.
 
 ## References
 
